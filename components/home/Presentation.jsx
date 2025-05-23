@@ -8,14 +8,15 @@ export default function Presentation() {
         Bienvenue au Marché de Noël🎄
       </h1>
       <Image src={MarcheNoel} alt="Marché de Noël festif" height={500}  className="p-8" />
-
-      <p className="text-lg mb-4">
+        <div className="items-start">
+            <p className="text-lg mb-4">
         Plongez dans la magie de Noël avec notre marché festif situé en plein cœur de la ville.
         Petits chalets en bois, lumières scintillantes, musiques traditionnelles et odeurs de cannelle vous attendent !
       </p>
       <p className="text-lg">
         Venez vivre l’expérience unique de Noël avec nous, du 24 au 26 décembre !
       </p>
+        </div>
     </section>
   );
 }

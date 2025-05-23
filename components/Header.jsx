@@ -3,7 +3,7 @@ import NavBar from "./Nav";
 import { TbChristmasTreeFilled } from "react-icons/tb";
 export default function Header() {
     return (
-        <header className="bg-blue-700 text-white shadow-md">
+        <header className="bg-blue-900 text-white">
             <div className="max-w-8xl mx-auto px-4 flex justify-between items-center">
                 <div className="flex items-center gap-2"  >
                     <TbChristmasTreeFilled className="green-400" />

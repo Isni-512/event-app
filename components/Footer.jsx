@@ -1,10 +1,11 @@
 export default function Footer() {
     return (
-        <footer className="flex justify-center h-20 items-center bg-blue-700 text-white">
-            &copy; 2025 Marché de Noel event. Tous droits réservés.
-            fait par Israel-claude Nsimbi & Eunice Muleka 
-            Collége La Cité
-            Suivie Nous
+        <footer className="flex flex-col justify-center items-center h-auto text-center bg-blue-900 text-white">
+          
+      <p>&copy; 2025 Marché de Noël event.</p>
+      <p>Tous droits réservés.</p>
+      <p>Fait par Israel-Claude Nsimbi &amp; Eunice Muleka</p>
+      <p>Collège La Cité</p>
         </footer>
     );
 }
