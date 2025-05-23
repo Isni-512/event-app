@@ -18,7 +18,11 @@ Le site sera entièrement développé avec **Next.js** et **React**, en suivant 
 - Blanc neige (#FFFFFF)
 - Bleu nuit (#001F3F)
 
+# Liste des membres
 
+-   Sedric (Chef de projet)
+-   Israel-Claude Nsimbi (Développeur)
+-   Eunice mulekani muleka (Développeuse)
 
 
 
