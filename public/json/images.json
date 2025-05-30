@@ -1,0 +1,6 @@
+[
+  { "id": 1, "src": "/images/noel1.jpg", "alt": "Marché de Noël 1" },
+  { "id": 2, "src": "/images/noel2.jpg", "alt": "Marché de Noël 2" },
+  { "id": 3, "src": "/images/noel3.jpg", "alt": "Marché de Noël 3" },
+  { "id": 4, "src": "/images/noel4.jpg", "alt": "Marché de Noël 4" }
+]
