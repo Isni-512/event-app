@@ -6,6 +6,7 @@ import Home from "@/app/page";
 import Jour1 from "@/components/jour/Jour1";
 import Jour2 from "@/components/jour/Jour2";
 import Jour3 from "@/components/jour/Jour3";
+import Galerie from "@/components/Galeries/Galeries";
 
 import { useState } from "react";
 
@@ -32,6 +33,8 @@ export default function RootLayout({ children }) {
                         <Jour2 />
                     ) : currentPage === "Jour3" ? (
                         <Jour3 />
+                    ) : currentPage === "Galerie" ? (
+                        <Galerie />
                     ) : (
                         <div>Page Not Found</div>
                     )}
