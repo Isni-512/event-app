@@ -1,7 +1,8 @@
 import Image from "next/image";
 import NavBar from "./Nav";
 import { TbChristmasTreeFilled } from "react-icons/tb";
-export default function Header() {
+
+export default function Header({ changePage }) {
     return (
         <header className="bg-blue-900 text-white shadow-xl fixed top-0 left-0 w-full z-50">
             <div className="max-w-8xl mx-auto px-4 flex justify-between items-center">
@@ -9,7 +10,7 @@ export default function Header() {
                     <TbChristmasTreeFilled className="green-400" />
                     <h1 className="text-xl font-bold "> Marché de Noël</h1>
                 </div>
-                <NavBar />
+                <NavBar setPage={changePage} />
             </div>
         </header>
     );
