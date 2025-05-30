@@ -1,6 +1,62 @@
 [
-  { "id": 1, "src": "/images/noel1.jpg", "alt": "Marché de Noël 1" },
-  { "id": 2, "src": "/images/noel2.jpg", "alt": "Marché de Noël 2" },
-  { "id": 3, "src": "/images/noel3.jpg", "alt": "Marché de Noël 3" },
-  { "id": 4, "src": "/images/noel4.jpg", "alt": "Marché de Noël 4" }
+    {
+        "id": 1,
+        "titre": "Chalets de Noël",
+        "image": "https://images.unsplash.com/photo-1543852786-1cf6624b9987",
+        "alt": "Petits chalets en bois illuminés"
+    },
+    {
+        "id": 2,
+        "titre": "Décorations féeriques",
+        "image": "https://images.unsplash.com/photo-1608889178595-79c1ff43bd57",
+        "alt": "Guirlandes lumineuses suspendues"
+    },
+    {
+        "id": 3,
+        "titre": "Concert sur la place",
+        "image": "https://images.unsplash.com/photo-1543163521-1bf539c55dd2",
+        "alt": "Musiciens jouant sous un sapin géant"
+    },
+    {
+        "id": 4,
+        "titre": "Stand de vin chaud",
+        "image": "https://images.unsplash.com/photo-1576511450963-507b96951dba",
+        "alt": "Tasses fumantes sur un comptoir en bois"
+    },
+    {
+        "id": 5,
+        "titre": "Ateliers pour enfants",
+        "image": "https://images.pexels.com/photos/7288767/pexels-photo-7288767.jpeg",
+        "alt": "Enfants créant des décorations de Noël"
+    },
+    {
+        "id": 6,
+        "titre": "Patinoire festive",
+        "image": "https://images.unsplash.com/photo-1513346940221-6f673d962e97",
+        "alt": "Personnes patinant sur une patinoire illuminée"
+    },
+    {
+        "id": 7,
+        "titre": "Sapin géant",
+        "image": "https://images.unsplash.com/photo-1513285530925-96b5f7c2d8b7",
+        "alt": "Un grand sapin décoré en pleine place"
+    },
+    {
+        "id": 8,
+        "titre": "Marché de nuit",
+        "image": "https://images.unsplash.com/photo-1576511900830-06c2d6744753",
+        "alt": "Le marché éclairé sous les étoiles"
+    },
+    {
+        "id": 9,
+        "titre": "Arrivée du Père Noël",
+        "image": "https://images.unsplash.com/photo-1540479859555-17af45c78602",
+        "alt": "Père Noël saluant les enfants"
+    },
+    {
+        "id": 10,
+        "titre": "Feu d’artifice",
+        "image": "https://images.unsplash.com/photo-1604014238412-fd6f3f9021a9",
+        "alt": "Feu d’artifice au-dessus de la ville"
+    }
 ]
