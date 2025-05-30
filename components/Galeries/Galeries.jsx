@@ -1,5 +1,5 @@
 import galerie from "@/public/json/images.json";
-import GalerieImage from "@/components/GalerieImage";
+import GalerieImage from "@/components/galeries/GaleriesImage";
 
 export default function Galerie() {
     return (
