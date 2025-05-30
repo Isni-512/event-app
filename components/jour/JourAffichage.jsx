@@ -5,7 +5,7 @@ export default function JourAffichage({ id }) {
 
   return (
     <section
-      className="w-full h-full bg-cover bg-center bg-no-repeat bg-fixed text-white py-32 px-6"
+      className="min-h-screen w-full bg-cover bg-center bg-no-repeat bg-fixed text-white py-32 px-6"
       style={{ backgroundImage: `url(${jour.image})` }}
     >
       <div className="bg-black/60 p-4 rounded-xl max-w-4xl mx-auto">
