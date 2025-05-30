@@ -1,0 +1,39 @@
+[
+  {
+    "id": 1,
+    "titre": "Jour 1 – Dimanche 24 décembre 🎄",
+    "description": "Le marché ouvre ses portes dans une ambiance féerique dès 10h. Venez découvrir les chalets décorés, les saveurs locales et les premières animations de Noël !",
+    "horaires": [
+      { "heure": "10h00", "description": "Ouverture du marché" },
+      { "heure": "14h00", "description": "Contes pour enfants" },
+      { "heure": "17h00", "description": "Chorale de Noël" },
+      { "heure": "18h30", "description": "Arrivée du Père Noël" },
+      { "heure": "20h00", "description": "Concert acoustique (place centrale)" }
+    ],
+    "image": "/img/Jour1.webp"
+  },
+  {
+    "id": 2,
+    "titre": "Jour 2 – Lundi 25 décembre ❄️",
+    "description": "Journée spéciale Noël avec des surprises pour toute la famille !",
+    "horaires": [
+      { "heure": "11h00", "description": "Ouverture du marché" },
+      { "heure": "13h00", "description": "Spectacle pour enfants" },
+      { "heure": "16h00", "description": "Déambulation des lutins" },
+      { "heure": "18h00", "description": "Mini-concert de jazz" }
+    ],
+    "image": "/img/Jour2.webp"
+  },
+  {
+    "id": 3,
+    "titre": "Jour 3 – Mardi 26 décembre 🎁",
+    "description": "Dernier jour du marché, profitez des dernières animations et des bonnes affaires !",
+    "horaires": [
+      { "heure": "10h30", "description": "Ouverture avec fanfare" },
+      { "heure": "12h00", "description": "Dégustation gratuite de vin chaud" },
+      { "heure": "15h00", "description": "Atelier créatif pour enfants" },
+      { "heure": "19h00", "description": "Clôture musicale du marché" }
+    ],
+    "image": "/img/Jour3.webp"
+  }
+]
