@@ -30,7 +30,7 @@
     "description": "Dernier jour du marché, profitez des dernières animations et des bonnes affaires !",
     "horaires": [
       { "heure": "10h30", "description": "Ouverture avec fanfare" },
-      { "heure": "12h00", "description": "Dégustation gratuite de vin chaud" },
+      { "heure": "12h00", "description": "Dégustation gratuite de vin"},
       { "heure": "15h00", "description": "Atelier créatif pour enfants" },
       { "heure": "19h00", "description": "Clôture musicale du marché" }
     ],
