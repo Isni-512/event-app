@@ -4,6 +4,7 @@ import Footer from "@/components/Footer";
 
 import Home from "@/app/page";
 import Jour1 from "@/components/jour/Jour1";
+// skipcq: JS-0128
 import Jour2 from "@/components/jour/Jour2";
 import Jour3 from "@/components/jour/Jour3";
 import Galerie from "@/components/galeries/Galeries";

@@ -36,16 +36,6 @@ export default function Timer({ targetDate }) {
 
   const format = (val) => String(val).padStart(2, "0");
 
-  // Format lisible de la date cible
-  const dateLocale = new Date(targetDate).toLocaleString("fr-FR", {
-    weekday: "long",
-    day: "numeric",
-    month: "long",
-    year: "numeric",
-    hour: "2-digit",
-    minute: "2-digit",
-  });
-
   return (
     <div className="text-center my-6">
 
