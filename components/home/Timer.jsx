@@ -22,9 +22,9 @@ export default function Timer({ targetDate }) {
       }
 
       const jours = Math.floor(distance / (1000 * 60 * 60 * 24));
-      const heures = Math.floor((distance % jours) / (1000 * 60 * 60));
-      const minutes = Math.floor((distance % heures) / (1000 * 60));
-      const secondes = Math.floor((distance % minutes) / 1000);
+      const heures = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+      const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+      const secondes = Math.floor((distance % (1000 * 60)) / 1000);
 
       setTimeLeft({ jours, heures, minutes, secondes });
     };
@@ -35,6 +35,16 @@ export default function Timer({ targetDate }) {
   }, [targetDate]);
 
   const format = (val) => String(val).padStart(2, "0");
+
+  // Format lisible de la date cible
+  const dateLocale = new Date(targetDate).toLocaleString("fr-FR", {
+    weekday: "long",
+    day: "numeric",
+    month: "long",
+    year: "numeric",
+    hour: "2-digit",
+    minute: "2-digit",
+  });
 
   return (
     <div className="text-center my-6">
