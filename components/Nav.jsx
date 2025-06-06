@@ -1,3 +1,4 @@
+import { useCallback } from "react";
 import { IoIosMenu } from "react-icons/io";
 export default function NavBar({ setPage }) {
     return (
