@@ -1,9 +1,46 @@
-import { useCallback } from "react";
-import { useState } from "react";
+import { useCallback, useState } from "react";
 import { IoIosMenu } from "react-icons/io";
 
-export default function NavBar({ setPage }) {
+const navItems = [
+    { page: "Accueil", label: "Home" },
+    { page: "Jour1", label: "Jour 1" },
+    { page: "Jour2", label: "Jour 2" },
+    { page: "Jour3", label: "Jour 3" },
+    { page: "Galerie", label: "Galerie" },
+];
 
+function DesktopNav({ items, handleClick }) {
+    return (
+        <ul className="hidden sm:flex space-x-4">
+            {items.map(({ page, label }) => (
+                <li key={page}>
+                    <button className="cursor-pointer" onClick={() => handleClick(page)}>
+                        {label}
+                    </button>
+                </li>
+            ))}
+        </ul>
+    );
+}
+
+function MobileNav({ items, handleClick }) {
+    return (
+        <ul className="sm:hidden bg-blue-900 rounded-b-xl py-4 space-y-2 absolute top-20 left-0 w-full z-40 shadow-lg">
+            {items.map(({ page, label }) => (
+                <li key={page}>
+                    <button
+                        onClick={() => handleClick(page)}
+                        className="block w-full text-left px-4 cursor-pointer"
+                    >
+                        {label}
+                    </button>
+                </li>
+            ))}
+        </ul>
+    );
+}
+
+export default function NavBar({ setPage }) {
     const [menuOpen, setMenuOpen] = useState(false);
 
     const handleClick = (page) => {
@@ -20,25 +57,9 @@ export default function NavBar({ setPage }) {
                 >
                     <IoIosMenu />
                 </button>
-
-                <ul className="hidden sm:flex space-x-4">
-                    <li><button className="cursor-pointer" onClick={() => handleClick("Accueil")}>Home</button></li>
-                    <li><button className="cursor-pointer" onClick={() => handleClick("Jour1")}>Jour 1</button></li>
-                    <li><button className="cursor-pointer" onClick={() => handleClick("Jour2")}>Jour 2</button></li>
-                    <li><button className="cursor-pointer" onClick={() => handleClick("Jour3")}>Jour 3</button></li>
-                    <li><button className="cursor-pointer" onClick={() => handleClick("Galerie")}>Galerie</button></li>
-                </ul>
+                <DesktopNav items={navItems} handleClick={handleClick} />
             </div>
-
-            {menuOpen && (
-                <ul className="sm:hidden bg-blue-900 rounded-b-xl py-4 space-y-2 absolute top-20 left-0 w-full z-40 shadow-lg">
-                    <li><button onClick={() => handleClick("Accueil")} className="block w-full text-left px-4 cursor-pointer">Home</button></li>
-                    <li><button onClick={() => handleClick("Jour1")} className="block w-full text-left px-4 cursor-pointer">Jour 1</button></li>
-                    <li><button onClick={() => handleClick("Jour2")} className="block w-full text-left px-4 cursor-pointer">Jour 2</button></li>
-                    <li><button onClick={() => handleClick("Jour3")} className="block w-full text-left px-4 cursor-pointer">Jour 3</button></li>
-                    <li><button onClick={() => handleClick("Galerie")} className="block w-full text-left px-4 cursor-pointer">Galerie</button></li>
-                </ul>
-            )}
+            {menuOpen && <MobileNav items={navItems} handleClick={handleClick} />}
         </nav>
     );
 }

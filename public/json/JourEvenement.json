@@ -9,7 +9,7 @@
       { "heure": "14h00", "description": "Contes pour enfants" },
       { "heure": "17h00", "description": "Chorale de Noël" },
       { "heure": "18h30", "description": "Arrivée du Père Noël" },
-      { "heure": "20h00", "description": "Concert acoustique (place centrale)" }
+      { "heure": "20h00", "description": "Concert acoustique" }
     ],
     "image": "/img/Jour1.webp"
   },
