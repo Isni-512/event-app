@@ -6,7 +6,7 @@ import Home from "@/app/page";
 import Jour1 from "@/components/jour/Jour1";
 import Jour2 from "@/components/jour/Jour2";
 import Jour3 from "@/components/jour/Jour3";
-import Galerie from "@/components/Galeries/Galeries";
+import Galerie from "@/components/galeries/Galeries";
 
 import { useState } from "react";
 

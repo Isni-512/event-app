@@ -1,3 +1,4 @@
+import { useCallback } from "react";
 import { useState } from "react";
 import { IoIosMenu } from "react-icons/io";
 
@@ -21,11 +22,11 @@ export default function NavBar({ setPage }) {
                 </button>
 
                 <ul className="hidden sm:flex space-x-4">
-                    <li><button  className="cursor-pointer" onClick={() => handleClick("Accueil")}>Home</button></li>
-                    <li><button  className="cursor-pointer" onClick={() => handleClick("Jour1")}>Jour 1</button></li>
-                    <li><button  className="cursor-pointer" onClick={() => handleClick("Jour2")}>Jour 2</button></li>
-                    <li><button  className="cursor-pointer" onClick={() => handleClick("Jour3")}>Jour 3</button></li>
-                    <li><button  className="cursor-pointer" onClick={() => handleClick("Galerie")}>Galerie</button></li>
+                    <li><button className="cursor-pointer" onClick={() => handleClick("Accueil")}>Home</button></li>
+                    <li><button className="cursor-pointer" onClick={() => handleClick("Jour1")}>Jour 1</button></li>
+                    <li><button className="cursor-pointer" onClick={() => handleClick("Jour2")}>Jour 2</button></li>
+                    <li><button className="cursor-pointer" onClick={() => handleClick("Jour3")}>Jour 3</button></li>
+                    <li><button className="cursor-pointer" onClick={() => handleClick("Galerie")}>Galerie</button></li>
                 </ul>
             </div>
 
