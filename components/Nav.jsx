@@ -1,65 +1,62 @@
-import { useCallback, useState } from "react";
+import { useState } from "react";
 import { IoIosMenu } from "react-icons/io";
+import Link from "next/link";
 
 const navItems = [
-    { page: "Accueil", label: "Home" },
-    { page: "Jour1", label: "Jour 1" },
-    { page: "Jour2", label: "Jour 2" },
-    { page: "Jour3", label: "Jour 3" },
-    { page: "Galerie", label: "Galerie" },
+  { page: "", label: "Accueil" },
+  { page: "jour1", label: "Jour 1" },
+  { page: "jour2", label: "Jour 2" },
+  { page: "jour3", label: "Jour 3" },
+  { page: "galerie", label: "Galerie" },
 ];
 
-function DesktopNav({ items, handleClick }) {
-    return (
-        <ul className="hidden sm:flex space-x-4">
-            {items.map(({ page, label }) => (
-                <li key={page}>
-                    <button className="cursor-pointer" onClick={() => handleClick(page)}>
-                        {label}
-                    </button>
-                </li>
-            ))}
-        </ul>
-    );
+function DesktopNav({ items }) {
+  return (
+    <ul className="hidden sm:flex space-x-4">
+      {items.map(({ page, label }) => (
+        <li key={page}>
+          <Link href={`/${page}`}>
+            {label}
+          </Link>
+        </li>
+      ))}
+    </ul>
+  );
 }
 
-function MobileNav({ items, handleClick }) {
-    return (
-        <ul className="sm:hidden bg-blue-900 rounded-b-xl py-4 space-y-2 absolute top-20 left-0 w-full z-40 shadow-lg">
-            {items.map(({ page, label }) => (
-                <li key={page}>
-                    <button
-                        onClick={() => handleClick(page)}
-                        className="block w-full text-left px-4 cursor-pointer"
-                    >
-                        {label}
-                    </button>
-                </li>
-            ))}
-        </ul>
-    );
+function MobileNav({ items, closeMenu }) {
+  return (
+    <ul className="sm:hidden bg-blue-900 rounded-b-xl py-4 space-y-2 absolute top-20 left-0 w-full z-40 shadow-lg">
+      {items.map(({ page, label }) => (
+        <li key={page}>
+          <Link
+            href={`/${page}`}
+            className="block w-full text-left px-4"
+            onClick={closeMenu}
+          >
+            {label}
+          </Link>
+        </li>
+      ))}
+    </ul>
+  );
 }
 
-export default function NavBar({ setPage }) {
-    const [menuOpen, setMenuOpen] = useState(false);
+export default function NavBar() {
+  const [menuOpen, setMenuOpen] = useState(false);
 
-    const handleClick = (page) => {
-        setPage(page);
-        setMenuOpen(false);
-    };
-
-    return (
-        <nav className="flex justify-between items-center h-20 text-white px-4">
-            <div className="flex justify-between items-center h-20">
-                <button
-                    onClick={() => setMenuOpen(!menuOpen)}
-                    className="sm:hidden text-4xl cursor-pointer"
-                >
-                    <IoIosMenu />
-                </button>
-                <DesktopNav items={navItems} handleClick={handleClick} />
-            </div>
-            {menuOpen && <MobileNav items={navItems} handleClick={handleClick} />}
-        </nav>
-    );
+  return (
+    <nav className="flex justify-between items-center h-20 text-white px-4">
+      <div className="flex justify-between items-center h-20">
+        <button
+          onClick={() => setMenuOpen(!menuOpen)}
+          className="sm:hidden text-4xl cursor-pointer"
+        >
+          <IoIosMenu />
+        </button>
+        <DesktopNav items={navItems} />
+      </div>
+      {menuOpen && <MobileNav items={navItems} closeMenu={() => setMenuOpen(false)} />}
+    </nav>
+  );
 }

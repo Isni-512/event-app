@@ -19,26 +19,12 @@ const inter = Inter({ subsets: ['latin'] });
 //     description: 'Demo Cours Programmation web avancé',
 // };
 export default function RootLayout({ children }) {
-    const [currentPage, setCurrentPage] = useState("Accueil");
     return (
         <html lang="en">
             <body className="flex flex-col min-h-screen">
-                <Header changePage={setCurrentPage} />
+                <Header />
                  <main className="flex-1">
-                    {/* {children} */}
-                    {currentPage === "Accueil" ? (
-                        <Home />
-                    ) : currentPage === "Jour1" ? (
-                        <Jour1 />
-                    ) : currentPage === "Jour2" ? (
-                        <Jour2 />
-                    ) : currentPage === "Jour3" ? (
-                        <Jour3 />
-                    ) : currentPage === "Galerie" ? (
-                        <Galerie />
-                    ) : (
-                        <div>Page Not Found</div>
-                    )}
+                    {children}
                 </main>                
                 <Footer />
             </body>
