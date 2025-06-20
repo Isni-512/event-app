@@ -8,6 +8,7 @@ const navItems = [
   { page: "jour2", label: "Jour 2" },
   { page: "jour3", label: "Jour 3" },
   { page: "galerie", label: "Galerie" },
+  { page: "contact", label: "Contact" },
 ];
 
 function DesktopNav({ items }) {
