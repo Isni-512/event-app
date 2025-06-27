@@ -1,3 +1,4 @@
+"use client"
 import { useState } from "react";
 import { IoIosMenu } from "react-icons/io";
 import Link from "next/link";
