@@ -12,7 +12,12 @@ export default function JourAffichage({ id }) {
       style={{ backgroundImage: `url(${jour.image})` }}
     >
       <div className="bg-black/60 p-8 rounded-xl max-w-4xl mx-auto">
-        <h1 className="text-3xl font-bold text-center mb-6">{jour.titre}</h1>
+        <h1 style={{ fontSize: "3rem" }} className="font-bold">
+  {jour.titre}
+</h1>
+
+
+
 
         <Timer targetDate={jour.target} />
 
