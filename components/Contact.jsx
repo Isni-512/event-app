@@ -76,6 +76,7 @@ export default function Contact() {
                   value: /^(?!.*[_%.+-]{2,})[a-zA-Z0-9]+(?:[a-zA-Z0-9_%.+-]*[a-zA-Z0-9]+)?@[a-zA-Z0-9]+(?:[a-zA-Z0-9.-]*[a-zA-Z0-9]+)?\.[a-zA-Z]{2,}$/,
                   message: "Adresse email invalide",
                 },
+                
               })}
               type="email"
               id="email"
