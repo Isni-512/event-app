@@ -3,6 +3,8 @@ import { useState } from "react";
 import { IoIosMenu } from "react-icons/io";
 import Link from "next/link";
 
+import { useTranslation } from "react-i18next";
+
 const navItems = [
   { page: "", label: "Accueil" },
   { page: "jour1", label: "Jour 1" },
