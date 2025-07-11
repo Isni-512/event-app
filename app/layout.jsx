@@ -12,7 +12,7 @@ export const metadata = {
     openGraph: {
       title: 'event-app | Accueil',
       description: 'Bienvenue sur le site officiel du Marché de Noël. Retrouvez toutes les informations sur les animations, les dates et les temps forts de l’événement.',
-      images: ['./img/icon_santa.webp']
+      images: ['/img/icon_santa.webp']
     }
 }
 export default function RootLayout({ children }) {

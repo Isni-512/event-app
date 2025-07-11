@@ -46,7 +46,7 @@ export default function Contact() {
   };
 
   return (
-    <section className="bg-gray-50 py-20 px-4">
+    <section className="bg-gray-50 py-20 px-4 pt-28">
       <div className="max-w-3xl mx-auto bg-white shadow-xl rounded-2xl p-10">
         <h2 className="text-3xl font-bold text-blue-800 mb-8 text-center">Contactez-nous</h2>
 
