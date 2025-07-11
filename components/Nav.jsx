@@ -8,7 +8,7 @@ const navItems = [
   { page: "jour1", label: "Jour 1" },
   { page: "jour2", label: "Jour 2" },
   { page: "jour3", label: "Jour 3" },
-  { page: "galerie", label: "Galerie" },
+//  { page: "galerie", label: "Galerie" },
   { page: "contact", label: "Contact" },
 ];
 
