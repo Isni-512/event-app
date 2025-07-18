@@ -37,10 +37,10 @@ export default function Header() {
       className={`h-20 ${theme === "light"
         ? "bg-blue-900 text-white"
         : "bg-black"
-        } shadow-xl fixed top-0 left-0 w-full z-50`}
+        } shadow-xl m-auto flex justify-between items-center fixed top-0 left-0 w-full z-50`}
     >
-      <div className="max-w-7xl mx-auto px-4 flex justify-between items-center">
-        <Logo tHeader={tHeader} />
+      <Logo tHeader={tHeader} />
+      <div className="max-w-7xl m-0 px-4 flex items-center">
         <NavBar />
         <button
           onClick={toggleTheme}
