@@ -1,9 +1,8 @@
 import jours from "@/public/json/JourEvenement";
-import Timer  from "@/components/home/Timer";
+import Timer from "@/components/home/Timer";
 
 export default function JourAffichage({ id }) {
   const jour = jours.find((j) => j.id === id);
-
   if (!jour) return <p>Jour introuvable.</p>;
 
   return (
@@ -13,11 +12,8 @@ export default function JourAffichage({ id }) {
     >
       <div className="bg-black/60 p-8 rounded-xl max-w-4xl mx-auto">
         <h1 style={{ fontSize: "3rem" }} className="font-bold">
-  {jour.titre}
-</h1>
-
-
-
+          {jour.titre}
+        </h1>
 
         <Timer targetDate={jour.target} />
 
