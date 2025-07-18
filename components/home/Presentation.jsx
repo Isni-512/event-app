@@ -8,7 +8,7 @@ export default function Presentation() {
         style={{ fontSize: "3rem" }}
         className="font-bold text-white flex flex-col text-center max-w-4xl"
       >
-        <span>Bienvenue</span> 
+        <span>Bienvenue</span>
         <span>au Marché de Noël🎄</span>
       </h1>
     </section>
