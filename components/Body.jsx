@@ -1,10 +1,11 @@
 "use client";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
-import { useMyContext } from "@/provider/MyContextProvider";
+import MyContextProvider, { useMyContext } from "@/provider/MyContextProvider";
 
 export default function Body({ children }) {
     return (
+        <MyContextProvider>
         <body className="flex flex-col min-h-screen ">
             <Header />
             <main
@@ -14,5 +15,6 @@ export default function Body({ children }) {
             </main>
             <Footer />
         </body>
+        </MyContextProvider>
     );
 }
