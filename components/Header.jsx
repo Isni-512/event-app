@@ -43,7 +43,10 @@ export default function Header() {
           onClick={toggleTheme}
           className="ml-8 text-2xl cursor-pointer"
         >
-          {theme === "light" ? <FaMoon /> : <IoIosSunny />}
+          {theme === "light"
+  ? <FaMoon />
+  : <IoIosSunny className="text-white" />
+}
         </button>
         <select
           onChange={(e) => i18next.changeLanguage(e.target.value)}
