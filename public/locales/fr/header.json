@@ -1,7 +1,8 @@
 {
+    "header.titre": "Marché de Noël",
     "header.home": "Accueil",
-    "header.personnel": "Personnel",
-    "header.document": "Document",
-    "header.about": "À propos",
+    "header.day1": "Jour 1",
+    "header.day2": "Jour 2",
+    "header.day3": "Jour 3",
     "header.contact": "Contact"
 }
