@@ -58,8 +58,8 @@ export default function Header() {
             ? "bg-blue-900 text-white"
             : "bg-black border-b-1 border-white"
             } text-white ml-4 p-2 rounded`}>
-          <option value="en" className="text-black">EN</option>
-          <option value="fr" className="text-black">FR</option>
+          <option value="en" className="text-white">EN</option>
+          <option value="fr" className="text-white">FR</option>
         </select>
       </div>
     </header>
