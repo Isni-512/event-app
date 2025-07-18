@@ -73,9 +73,10 @@ export default function Contact() {
               {...register("email", {
                 required: "Champ obligatoire",
                 pattern: {
-                 value: /^(?!.*[_%.+-]{2,})[a-zA-Z0-9]+(?:[a-zA-Z0-9_%.+-]*[a-zA-Z0-9]+)?@[a-zA-Z0-9]+(?:[a-zA-Z0-9.-]*[a-zA-Z0-9]+)?\.[a-zA-Z]{2,}$/,
+                  value: /^(?!.*[_%.+-]{2,})[a-zA-Z0-9]+(?:[a-zA-Z0-9_%.+-]*[a-zA-Z0-9]+)?@[a-zA-Z0-9]+(?:[a-zA-Z0-9.-]*[a-zA-Z0-9]+)?\.[a-zA-Z]{2,}$/,
                   message: "Adresse email invalide",
                 },
+                
               })}
               type="email"
               id="email"

@@ -2,15 +2,7 @@
 import { useState } from "react";
 import { IoIosMenu } from "react-icons/io";
 import Link from "next/link";
-
-const navItems = [
-  { page: "", label: "Accueil" },
-  { page: "jour1", label: "Jour 1" },
-  { page: "jour2", label: "Jour 2" },
-  { page: "jour3", label: "Jour 3" },
-//  { page: "galerie", label: "Galerie" },
-  { page: "contact", label: "Contact" },
-];
+import { useTranslation } from "react-i18next";
 
 function DesktopNav({ items }) {
   return (
@@ -46,6 +38,17 @@ function MobileNav({ items, closeMenu }) {
 
 export default function NavBar() {
   const [menuOpen, setMenuOpen] = useState(false);
+  const { t } = useTranslation("common");
+  const { t: tHeader } = useTranslation("header");
+
+  const navItems = [
+    { page: "", label: tHeader("header.home") },
+    { page: "jour1", label: tHeader("header.day1") },
+    { page: "jour2", label: tHeader("header.day2") },
+    { page: "jour3", label: tHeader("header.day3") },
+    //{ page: "galerie", label: "Galerie" },
+    { page: "contact", label: tHeader("header.contact") },
+  ];
 
   return (
     <nav className="flex justify-between items-center h-20 text-white px-4">
