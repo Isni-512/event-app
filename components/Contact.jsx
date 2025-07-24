@@ -1,6 +1,7 @@
 "use client";
 import { useForm } from "react-hook-form";
 import emailjs from "@emailjs/browser";
+import { useState } from "react";
 
 export default function Contact() {
   const {
@@ -18,6 +19,8 @@ export default function Contact() {
     },
     mode: "onBlur",
   });
+
+  const [messageStatus, setMessageStatus] = useState("");
 
   const sendEmail = () => {
     const templateParams = {
@@ -37,10 +40,12 @@ export default function Contact() {
       .then(
         (result) => {
           console.log("SUCCESS!", result.status, result.text);
+          setMessageStatus("✅ Votre message a été envoyé avec succès !");
           reset(); 
         },
         (error) => {
           console.log("FAILED...", error);
+          setMessageStatus("❌ Une erreur est survenue. Veuillez réessayer.");
         }
       );
   };
@@ -76,7 +81,6 @@ export default function Contact() {
                   value: /^(?!.*[_%.+-]{2,})[a-zA-Z0-9]+(?:[a-zA-Z0-9_%.+-]*[a-zA-Z0-9]+)?@[a-zA-Z0-9]+(?:[a-zA-Z0-9.-]*[a-zA-Z0-9]+)?\.[a-zA-Z]{2,}$/,
                   message: "Adresse email invalide",
                 },
-                
               })}
               type="email"
               id="email"
@@ -124,6 +128,12 @@ export default function Contact() {
               Envoyer
             </button>
           </div>
+
+          {messageStatus && (
+            <div className={`text-center mt-4 font-medium ${messageStatus.includes("succès") ? "text-green-600" : "text-red-600"}`}>
+              {messageStatus}
+            </div>
+          )}
         </form>
       </div>
     </section>
