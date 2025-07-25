@@ -2,7 +2,7 @@
 
 export default function Activites() {
   return (
-    <section className="py-12 px-4 max-w-6xl mx-auto">
+    <section className="bg-white py-12 px-4 max-w-6xl mx-auto">
       <h2 className="text-3xl font-bold text-center text-red-800 mb-8">
         Activités proposées
       </h2>
