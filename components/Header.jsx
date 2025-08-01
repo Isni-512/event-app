@@ -2,6 +2,7 @@
 import Link from "next/link";
 import NavBar from "./Nav";
 
+
 // Importing icons for the header
 import { TbChristmasTreeFilled } from "react-icons/tb";
 import { FaMoon } from "react-icons/fa";

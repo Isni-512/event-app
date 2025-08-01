@@ -1,7 +1,9 @@
+import InstallPrompt from "@/components/InstallPrompt";
+
 export default function Presentation() {
   return (
     <section
-      className="h-screen w-full bg-fixed flex items-center justify-center bg-center bg-cover px-4"
+      className="h-screen w-full bg-fixed flex flex-col items-center justify-center bg-center bg-cover px-4"
       style={{ backgroundImage: 'url("/img/MarcheNoel.webp")' }}
     >
       <h1
@@ -11,6 +13,7 @@ export default function Presentation() {
         <span>Bienvenue</span>
         <span>au Marché de Noël🎄</span>
       </h1>
+      <InstallPrompt />
     </section>
   );
 }

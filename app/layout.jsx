@@ -12,7 +12,9 @@ export const metadata = {
         title: 'event-app | Accueil',
         description: 'Bienvenue sur le site officiel du Marché de Noël. Retrouvez toutes les informations sur les animations, les dates et les temps forts de l’événement.',
         images: ['/img/icon_santa.webp']
-    }
+    },
+    manifest:"/manifest.json",
+
 }
 
 export default function RootLayout({ children }) {
